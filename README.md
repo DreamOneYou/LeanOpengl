@@ -7,3 +7,5 @@
 * 首先需要在本地目录下放置glad.c
 * 使用命令:make
 * ./transformation
+### 结果
+![image](Transformation/transformation.png)
