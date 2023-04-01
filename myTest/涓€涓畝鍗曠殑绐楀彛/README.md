@@ -2,4 +2,4 @@
 * make
 * ./window
 ## 效果
-！[IMAGE](RESULT.png)
+![IMAGE](RESULT.png)
