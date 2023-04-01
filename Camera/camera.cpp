@@ -1,3 +1,4 @@
+#define STB_IMAGE_IMPLEMENTATION //正常使用stb_image.h。需要加上这段代码
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <stb_image.h>
