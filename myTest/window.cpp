@@ -7,7 +7,18 @@ int main()
     glfwInit();
 
     // 创建窗口
+    /*
+        GLFWwindow* glfwCreateWindow(int width, int height, const char* title, GLFWmonitor* monitor, GLFWwindow* share);
+        width和height：分别表示窗口的宽度和高度，以像素为单位。
+        title：一个字符串，表示窗口的标题。
+        monitor：一个指向GLFWmonitor结构体的指针，表示将窗口创建在哪个显示器上。如果为NULL，则表示将窗口创建在主显示器上。
+        share：一个指向另一个GLFWwindow结构体的指针，表示将窗口与该窗口共享资源。如果为NULL，则表示不与其他窗口共享资源。
+        调用该函数后，将创建一个窗口，并返回一个指向该窗口的指针。开发者可以使用该指针来操作该窗口，例如设置窗口大小、位置、处理窗口事件等。
+    */
     GLFWwindow* window = glfwCreateWindow(800, 600, "My OpenGL Window", nullptr, nullptr);
+    /*
+    glfwMakeContextCurrent(window):调用该函数后，指定的窗口上下文将被设置为当前上下文，即后续的OpenGL函数调用将作用于该窗口上下文。
+    */
     glfwMakeContextCurrent(window);
 
     // 初始化GLAD
